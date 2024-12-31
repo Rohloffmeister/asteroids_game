@@ -35,6 +35,10 @@ def main():
         for object in updatable:
             object.update(dt)
         
+        for object in asteroids:
+            if player.check_collision(object):
+                print("Game over!")
+                return
         
         screen.fill(pygame.Color(0,0,0))
  
