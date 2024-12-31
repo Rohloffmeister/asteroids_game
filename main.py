@@ -48,7 +48,7 @@ def main():
             for shoot in shoots:
                 if asteroid.check_collision(shoot):
                     shoot.kill()
-                    asteroid.kill()
+                    asteroid.split()
         
         screen.fill(pygame.Color(0,0,0))
  
